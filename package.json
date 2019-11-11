@@ -1,0 +1,22 @@
+{
+  "name": "slide-veri-system",
+  "version": "1.0.0",
+  "description": "optimized version based on the old one",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonnyyJ/Slide-veri-system.git"
+  },
+  "author": "JonnyyJ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonnyyJ/Slide-veri-system/issues"
+  },
+  "homepage": "https://github.com/JonnyyJ/Slide-veri-system#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  }
+}
