@@ -17,6 +17,17 @@
   },
   "homepage": "https://github.com/JonnyyJ/Slide-veri-system#readme",
   "devDependencies": {
-    "webpack": "^4.41.2"
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "js-base64": "^2.4.9",
+    "node-nightly": "^1.7.3",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
