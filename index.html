@@ -12,7 +12,19 @@
 <script src="dist/veri.js"></script>
 <script>
 
+  veri.start(
+      {
 
+      },
+      ()=>{
+          console.log('verified')
+      }
+  );
+  function verify(){
+      if(veri.isVerified()){
+          document.getElementById('verified').innerText = 'verified';
+      }
+  }
 
 
 </script>
