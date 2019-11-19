@@ -1,4 +1,5 @@
 import Base64 from 'js-base64'
+import buildFrame from '../view/initialize'
 
 exports.init = (id,conn) => {
     /**
@@ -8,7 +9,7 @@ exports.init = (id,conn) => {
      * @para size the width of the captcha that would be created.
      * no callback function
      */
-    require('../view/initialize').buildFrame(id);  // Start Loading
+    buildFrame(id);  // Start Loading
     // Parse the links
     try {
         let links = JSON.parse(Base64.decode(conn));
