@@ -25,17 +25,17 @@ exports.startFingerMonitor = (smallPictureID, largePictureID) =>{
         ontouchdownEvent.preventDefault();
 
         //Get the initial position of small picture
-        window.veri.data.smallPictureInitialPositionX = smallPic.offsetLeft;
-        window.veri.data.smallpictureInitialPositionY = smallPic.offsetaTop;
+        window.veri.data.smPicIniPosX = smallPic.offsetLeft;
+        window.veri.data.smPicIniPosY = smallPic.offsetaTop;
 
-        //Get the position of finger indide the small picture
+        //Get the position of finger inside the small picture
         let dstnXCenToSmPic = ontouchdownEvent.touches[0].clientX - smallPic.offsetLeft;
-        let dstnYCentToSmPic = ontouchdownEvent.touches[0].clientY - smallPic.offsetTop;
+        let dstnYCenToSmPic = ontouchdownEvent.touches[0].clientY - smallPic.offsetTop;
 
         //When the user touch on the small picture and move the mouse
         document.ontouchmove = (ontouchmove) => {
             smallPic.style.top = (ontouchmove.touches[0].clientY - dstnXCenToSmPic) + 'px';
-            smallPic.style.left = (ontouchmove.touches[0].clientX - dstnYCentToSmPic) + 'px';
+            smallPic.style.left = (ontouchmove.touches[0].clientX - dstnYCenToSmPic) + 'px';
         //when the user release the mouse.
         document.ontouchend = (onTouchEndEvent) => {
             // Stop moving

@@ -1,3 +1,9 @@
+import rebuild from '../view/renewImage'
+import startMouseMonitor from '../movement_tracing/mouseTracing'
+import buildCaptcha from '../view/initialize'
+
+
+
 exports.building = (rebuild = false)=>{
     /*
     * Method for building the captcha in DOM
@@ -6,15 +12,15 @@ exports.building = (rebuild = false)=>{
     let largePictureLink = window.veri.data.largePicture + "?authID=" +  window.veri.data.authID;
 
     if (rebuild) {
-        require('../view/renewImage').rebuild(smallPictureLink,largePictureLink,() => {
+        rebuild(smallPictureLink,largePictureLink,() => {
             // Start mouse tracking
-            require('../movement_tracing/mouseTracing').startMouseMonitor("veri-smallPic","veri-largePic");
+            startMouseMonitor("veri-smallPic","veri-largePic");
         });
     }else {
         // Add elements to DOM
-        require('../view/initialize').buildCaptcha(smallPictureLink,largePictureLink,() => {
+       buildCaptcha(smallPictureLink,largePictureLink,() => {
             // Start mouse tracking
-            require('../movement_tracing/mouseTracing').startMouseMonitor("veri-smallPic","veri-largePic");
+       startMouseMonitor("veri-smallPic","veri-largePic");
         });
     }
 };

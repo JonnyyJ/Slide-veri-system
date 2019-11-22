@@ -19,10 +19,10 @@ exports.id = "";
 exports.authID = "";
 
 // Small picture initial position in X
-exports.smallPictureInitialPositionX = 0;
+exports.smPicIniPosX = 0;
 
 // Small picture initial position in Y
-exports.smallPictureInitialPositionY = 0;
+exports.smPicIniPosY = 0;
 
 // verified?
 exports.isVerified = false;
