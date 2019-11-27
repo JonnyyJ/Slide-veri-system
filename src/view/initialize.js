@@ -6,6 +6,7 @@ exports.buildFrame = (boxid) => {
     let outer = document.createElement("div");
     outer.classList.add('veri-frame');
     outer.id = "veri-frame";
+    // Set element unselectable
     outer.setAttribute("unselectable", "on");
     outer.onselectstart = ()=> {
         return false;
