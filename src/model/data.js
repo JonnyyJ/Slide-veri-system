@@ -12,7 +12,7 @@ exports.smallPicture = "";
 // Link for verification
 exports.verify = "";
 
-// Link for element's id that the zcapt would be created
+// Link for element's id that the veri would be created
 exports.id = "";
 
 // Verification ID
