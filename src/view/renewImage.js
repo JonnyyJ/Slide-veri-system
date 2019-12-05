@@ -1,3 +1,5 @@
+import loading from './loading'
+
 exports.rebuild = (smallPictureLink,largePictureLink,callback = () => {}) => {
     /**
      * Rebuilt picture in view. Replace the old pictures by new one.
@@ -38,7 +40,7 @@ exports.rebuild = (smallPictureLink,largePictureLink,callback = () => {}) => {
             frame.removeChild(document.getElementById("veri-largePic"));
             frame.removeChild(document.getElementById("veri-smallPic"));
             frame.appendChild(fragment);
-            require('./loading').loading.end(() => {
+            loading.end(() => {
                 callback(null);
             });
         }
