@@ -1,0 +1,26 @@
+.veri-appear {
+    animation: veri-appear 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .veri-disappear {
+    animation: veri-disappear 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes veri-appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes veri-disappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
